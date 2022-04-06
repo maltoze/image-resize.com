@@ -2,8 +2,8 @@ import React from 'react';
 import SEO from '../components/SEO';
 import locales from '../i18n';
 import { useIntl } from 'react-intl';
-import InformationCircleIcon from '@heroicons/react/outline/InformationCircleIcon';
-import UploadIcon from '@heroicons/react/outline/UploadIcon';
+import UploadIcon from '../icons/UploadIcon';
+import InformationCircleIcon from '../icons/InformationCircleIcon';
 
 const IndexPage = () => {
   const { formatMessage, locale } = useIntl();

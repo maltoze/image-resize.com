@@ -1,12 +1,12 @@
 import React from 'react';
-import ChevronDownIcon from '@heroicons/react/outline/ChevronDownIcon';
-import useTheme from '../hooks/theme';
 import locales from '../i18n';
-import { useIntl } from 'react-intl';
-import MoonIcon from '@heroicons/react/outline/MoonIcon';
-import SunIcon from '@heroicons/react/outline/SunIcon';
-import TranslateIcon from '@heroicons/react/outline/TranslateIcon';
 import { Link } from 'gatsby';
+import useTheme from '../hooks/theme';
+import { useIntl } from 'react-intl';
+import MoonIcon from '../icons/MoonIcon';
+import SunIcon from '../icons/SunIcon';
+import TranslateIcon from '../icons/TranslateIcon';
+import ChevronDownIcon from '../icons/ChevronDownIcon';
 
 const Header = () => {
   const [theme, setTheme] = useTheme();
