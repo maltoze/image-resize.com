@@ -1,4 +1,4 @@
-module.exports = {
+const config = {
   trailingSlash: 'always',
   siteMetadata: {
     siteUrl: `https://www.image-resize.com`,
@@ -31,6 +31,11 @@ module.exports = {
     },
     'gatsby-plugin-postcss',
     'gatsby-plugin-webpack-bundle-analyser-v2',
-    'gatsby-plugin-preact',
   ],
 };
+
+if (process.env === 'production') {
+  config.plugins.push('gatsby-plugin-preact');
+}
+
+module.exports = config;
