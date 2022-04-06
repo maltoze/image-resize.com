@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default ({ className = 'w-6 h-6' }) => (
+const TranslateIcon = ({ className = 'w-6 h-6' }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     className="h-6 w-6"
@@ -16,3 +16,5 @@ export default ({ className = 'w-6 h-6' }) => (
     />
   </svg>
 );
+
+export default TranslateIcon;

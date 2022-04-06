@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default ({ className = 'w-6 h-6' }) => (
+const ChevronDownIcon = ({ className = 'w-6 h-6' }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     className={className}
@@ -12,3 +12,5 @@ export default ({ className = 'w-6 h-6' }) => (
     <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
   </svg>
 );
+
+export default ChevronDownIcon;

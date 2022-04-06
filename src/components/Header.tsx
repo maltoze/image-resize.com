@@ -48,13 +48,9 @@ const Header = () => {
           >
             {Object.entries(locales).map(([lang, { path, label }]) => (
               <li key={lang}>
-                {locale === lang ? (
-                  <a className="active">{label}</a>
-                ) : (
-                  <Link activeClassName="active" to={`/${path}`}>
-                    {label}
-                  </Link>
-                )}
+                <Link activeClassName="active" to={`/${path}`}>
+                  {label}
+                </Link>
               </li>
             ))}
           </ul>

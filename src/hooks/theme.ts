@@ -5,7 +5,7 @@ const themeKey = 'theme';
 
 export default function useTheme() {
   const [theme, setTheme] = useState<'dark' | 'light'>(
-    isBrowser && localStorage?.[themeKey] || 'light'
+    (isBrowser && localStorage?.[themeKey]) || 'light'
   );
 
   useEffect(() => {
