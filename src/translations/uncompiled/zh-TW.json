@@ -5,7 +5,31 @@
   "XmcDl5": {
     "defaultMessage": "選擇圖片"
   },
-  "f3DqXZ": {
-    "defaultMessage": "安全地調整圖片大小"
+  "+UVaOm": {
+    "defaultMessage": "使用 <kbd>ctrl</kbd>+<kbd>v</kbd> 粘貼圖片"
+  },
+  "yyqVYb": {
+    "defaultMessage": "調整圖像大小"
+  },
+  "ybBEcq": {
+    "defaultMessage": "簡單、安全"
+  },
+  "5IP7AP": {
+    "defaultMessage": "寬度"
+  },
+  "DqKd4r": {
+    "defaultMessage": "百分"
+  },
+  "jvo0vs": {
+    "defaultMessage": "下載"
+  },
+  "teLZyZ": {
+    "defaultMessage": "高度"
+  },
+  "wwjygy": {
+    "defaultMessage": "在線調整圖像大小 - 支持 JPG, PNG, GIF, BMP, SVG 等. - 縮小圖像尺寸 - 簡單、安全."
+  },
+  "zygaPB": {
+    "defaultMessage": "在線調整圖像大小"
   }
 }

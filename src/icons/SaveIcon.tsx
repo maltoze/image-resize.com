@@ -1,4 +1,4 @@
-const InformationCircleIcon = ({ className = 'w-6 h-6' }) => (
+const SaveIcon = ({ className = 'w-6 h-6' }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     className={className}
@@ -10,9 +10,9 @@ const InformationCircleIcon = ({ className = 'w-6 h-6' }) => (
     <path
       strokeLinecap="round"
       strokeLinejoin="round"
-      d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+      d="M8 7H5a2 2 0 00-2 2v9a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-3m-1 4l-3 3m0 0l-3-3m3 3V4"
     />
   </svg>
 );
 
-export default InformationCircleIcon;
+export default SaveIcon;

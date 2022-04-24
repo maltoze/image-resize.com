@@ -1,4 +1,46 @@
 {
+  "+UVaOm": [
+    {
+      "type": 0,
+      "value": "Paste image using "
+    },
+    {
+      "children": [
+        {
+          "type": 0,
+          "value": "ctrl"
+        }
+      ],
+      "type": 8,
+      "value": "kbd"
+    },
+    {
+      "type": 0,
+      "value": "+"
+    },
+    {
+      "children": [
+        {
+          "type": 0,
+          "value": "v"
+        }
+      ],
+      "type": 8,
+      "value": "kbd"
+    }
+  ],
+  "5IP7AP": [
+    {
+      "type": 0,
+      "value": "Width"
+    }
+  ],
+  "DqKd4r": [
+    {
+      "type": 0,
+      "value": "Percent"
+    }
+  ],
   "VkTlIS": [
     {
       "type": 0,
@@ -11,10 +53,40 @@
       "value": "Select Image"
     }
   ],
-  "f3DqXZ": [
+  "jvo0vs": [
     {
       "type": 0,
-      "value": "Resize image(s) safely"
+      "value": "Save"
+    }
+  ],
+  "teLZyZ": [
+    {
+      "type": 0,
+      "value": "Height"
+    }
+  ],
+  "wwjygy": [
+    {
+      "type": 0,
+      "value": "Resize images online - Support JPG, PNG, GIF, BMP, SVG etc. - Reduce image size - Simply and safely."
+    }
+  ],
+  "ybBEcq": [
+    {
+      "type": 0,
+      "value": "simply and safely"
+    }
+  ],
+  "yyqVYb": [
+    {
+      "type": 0,
+      "value": "Resize image(s)"
+    }
+  ],
+  "zygaPB": [
+    {
+      "type": 0,
+      "value": "Resize Images Online"
     }
   ]
 }

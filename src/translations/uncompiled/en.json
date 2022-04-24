@@ -1,11 +1,35 @@
 {
+  "+UVaOm": {
+    "defaultMessage": "Paste image using <kbd>ctrl</kbd>+<kbd>v</kbd>"
+  },
+  "5IP7AP": {
+    "defaultMessage": "Width"
+  },
+  "DqKd4r": {
+    "defaultMessage": "Percent"
+  },
   "VkTlIS": {
     "defaultMessage": "or drop images here"
   },
   "XmcDl5": {
     "defaultMessage": "Select Image"
   },
-  "f3DqXZ": {
-    "defaultMessage": "Resize image(s) safely"
+  "jvo0vs": {
+    "defaultMessage": "Save"
+  },
+  "teLZyZ": {
+    "defaultMessage": "Height"
+  },
+  "wwjygy": {
+    "defaultMessage": "Resize images online - Support JPG, PNG, GIF, BMP, SVG etc. - Reduce image size - Simply and safely."
+  },
+  "ybBEcq": {
+    "defaultMessage": "simply and safely"
+  },
+  "yyqVYb": {
+    "defaultMessage": "Resize image(s)"
+  },
+  "zygaPB": {
+    "defaultMessage": "Resize Images Online"
   }
 }

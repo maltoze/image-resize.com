@@ -1,15 +1,36 @@
-import React from 'react';
 import { Helmet } from 'react-helmet';
+import { useIntl } from 'react-intl';
 
-type SEOProps = {
-  [key: string]: string;
-};
+const SEO = () => {
+  const { formatMessage, locale } = useIntl();
 
-const SEO = ({ lang, title, description }: Partial<SEOProps>) => {
   return (
-    <Helmet htmlAttributes={{ lang }}>
-      <title>{title || 'Resize images online'}</title>
-      <meta name="description" content={description} />
+    <Helmet htmlAttributes={{ lang: locale }}>
+      <title>
+        {formatMessage({
+          defaultMessage: 'Resize Images Online',
+        })}
+        {' | image-resize.com'}
+      </title>
+      <meta
+        name="description"
+        content={formatMessage({
+          defaultMessage:
+            'Resize images online - Support JPG, PNG, GIF, BMP, SVG etc. - Reduce image size - Simply and safely.',
+        })}
+      />
+      <meta
+        property="og:title"
+        content={formatMessage({ defaultMessage: 'Resize Images Online' })}
+      />
+      <meta
+        property="og:description"
+        content={formatMessage({
+          defaultMessage:
+            'Resize images online - Support JPG, PNG, GIF, BMP, SVG etc. - Reduce image size - Simply and safely.',
+        })}
+      />
+      <meta property="og:site_name" content="image-resize.com" />
     </Helmet>
   );
 };

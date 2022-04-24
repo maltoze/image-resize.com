@@ -10,7 +10,9 @@ export default function useTheme() {
 
   useEffect(() => {
     isBrowser && localStorage.setItem(themeKey, theme);
-    document.documentElement.setAttribute('data-theme', theme);
+    theme === 'dark'
+      ? document.documentElement.classList.add('dark')
+      : document.documentElement.classList.remove('dark');
   }, [theme]);
 
   return [theme, setTheme] as const;

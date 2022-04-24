@@ -1,3 +1,90 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .btn {
+    @apply px-5 rounded py-1.5 text-center text-base text-gray-800;
+
+    &-primary {
+      @apply bg-primary-700 text-white dark:bg-primary-800;
+
+      &:hover {
+        @apply bg-primary-600 dark:bg-primary-700;
+      }
+    }
+
+    &-lg {
+      @apply rounded-lg px-6 py-2.5 text-lg font-semibold;
+    }
+  }
+
+  .input {
+    @apply block w-full rounded border-gray-300 shadow-sm dark:border-gray-700 dark:bg-slate-800 dark:text-slate-400;
+
+    &:focus {
+      @apply border-primary-400 ring ring-primary-300 ring-opacity-50;
+    }
+    &:disabled {
+      @apply bg-gray-100 dark:bg-gray-900;
+    }
+
+    &-sm {
+      @apply py-1.5 px-2;
+    }
+    &-xs {
+      @apply py-1 px-1.5;
+    }
+  }
+
+  .kbd {
+    @apply rounded border border-slate-400 px-1;
+  }
+}
+
+.rc-slider {
+  @apply relative flex h-4 w-full touch-none items-center rounded;
+}
+
+.rc-slider-rail {
+  @apply absolute h-2 w-full rounded bg-primary-200 dark:bg-slate-400;
+}
+
+.rc-slider-track {
+  @apply absolute h-2 rounded bg-primary-500 dark:bg-primary-800;
+}
+
+.rc-slider-handle {
+  @apply absolute h-4 w-4 cursor-grab touch-pan-x rounded-full border-2 border-primary-500 bg-white;
+
+  &:hover {
+    @apply border-primary-400;
+  }
+
+  &:focus {
+    @apply outline-none ring-0;
+  }
+
+  &:active {
+    @apply ring-[6px] ring-primary-500 ring-opacity-50;
+  }
+}
+
+.rc-slider-mark {
+  @apply absolute top-4 left-0 w-full text-xs;
+}
+
+.rc-slider-mark-text {
+  @apply absolute inline-block cursor-pointer text-center text-slate-500;
+}
+
+.rc-slider-mark-text-active {
+  @apply text-slate-900 dark:text-slate-200;
+}
+
+@layer utilities {
+  .bg-tiny-checkers {
+    @apply bg-white dark:bg-slate-900;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8' viewBox='0 0 8 8'%3E%3Cg fill='%2394a3b8' fill-opacity='0.5'%3E%3Cpath fill-rule='evenodd' d='M0 0h4v4H0V0zm4 4h4v4H4V4z'/%3E%3C/g%3E%3C/svg%3E");
+  }
+}

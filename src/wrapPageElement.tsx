@@ -1,5 +1,4 @@
 import { WrapPageElementBrowserArgs } from 'gatsby';
-import React from 'react';
 import { IntlProvider } from 'react-intl';
 import Layout from './components/Layout';
 import locales from './i18n';

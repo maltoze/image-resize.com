@@ -1,4 +1,50 @@
 {
+  "+UVaOm": [
+    {
+      "type": 0,
+      "value": "使用 "
+    },
+    {
+      "children": [
+        {
+          "type": 0,
+          "value": "ctrl"
+        }
+      ],
+      "type": 8,
+      "value": "kbd"
+    },
+    {
+      "type": 0,
+      "value": "+"
+    },
+    {
+      "children": [
+        {
+          "type": 0,
+          "value": "v"
+        }
+      ],
+      "type": 8,
+      "value": "kbd"
+    },
+    {
+      "type": 0,
+      "value": " 粘贴图片"
+    }
+  ],
+  "5IP7AP": [
+    {
+      "type": 0,
+      "value": "宽"
+    }
+  ],
+  "DqKd4r": [
+    {
+      "type": 0,
+      "value": "百分比"
+    }
+  ],
   "VkTlIS": [
     {
       "type": 0,
@@ -11,10 +57,40 @@
       "value": "选择图片"
     }
   ],
-  "f3DqXZ": [
+  "jvo0vs": [
     {
       "type": 0,
-      "value": "安全地调整图片大小"
+      "value": "保存"
+    }
+  ],
+  "teLZyZ": [
+    {
+      "type": 0,
+      "value": "高"
+    }
+  ],
+  "wwjygy": [
+    {
+      "type": 0,
+      "value": "在线调整图片大小 - 支持 JPG, PNG, GIF, BMP, SVG 等. - 缩小图片尺寸 - 简单、安全."
+    }
+  ],
+  "ybBEcq": [
+    {
+      "type": 0,
+      "value": "简单、安全"
+    }
+  ],
+  "yyqVYb": [
+    {
+      "type": 0,
+      "value": "调整图片大小"
+    }
+  ],
+  "zygaPB": [
+    {
+      "type": 0,
+      "value": "在线调整图片大小"
     }
   ]
 }

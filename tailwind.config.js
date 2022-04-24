@@ -1,11 +1,14 @@
+const colors = require('tailwindcss/colors');
+
 module.exports = {
+  darkMode: 'class',
   content: ['./src/**/*.{js,jsx,ts,tsx}'],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        primary: colors.purple,
+      },
+    },
   },
-  plugins: [require('@tailwindcss/typography'), require('daisyui')],
-  daisyui: {
-    themes: ['light', 'dark'],
-    darkTheme: 'light'
-  },
+  plugins: [require('@tailwindcss/typography'), require('@tailwindcss/forms')],
 };

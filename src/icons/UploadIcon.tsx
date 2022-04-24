@@ -1,5 +1,3 @@
-import React from 'react';
-
 const UploadIcon = ({ className = 'w-6 h-6' }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"

@@ -1,3 +1,6 @@
+const prodPlugins =
+  process.env.NODE_ENV === 'production' ? [`gatsby-plugin-preact`] : [];
+
 const config = {
   trailingSlash: 'always',
   siteMetadata: {
@@ -31,11 +34,8 @@ const config = {
     },
     'gatsby-plugin-postcss',
     'gatsby-plugin-webpack-bundle-analyser-v2',
+    ...prodPlugins,
   ],
 };
-
-if (process.env === 'production') {
-  config.plugins.push('gatsby-plugin-preact');
-}
 
 module.exports = config;

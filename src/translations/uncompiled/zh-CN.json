@@ -5,7 +5,31 @@
   "XmcDl5": {
     "defaultMessage": "选择图片"
   },
-  "f3DqXZ": {
-    "defaultMessage": "安全地调整图片大小"
+  "+UVaOm": {
+    "defaultMessage": "使用 <kbd>ctrl</kbd>+<kbd>v</kbd> 粘贴图片"
+  },
+  "yyqVYb": {
+    "defaultMessage": "调整图片大小"
+  },
+  "ybBEcq": {
+    "defaultMessage": "简单、安全"
+  },
+  "5IP7AP": {
+    "defaultMessage": "宽"
+  },
+  "DqKd4r": {
+    "defaultMessage": "百分比"
+  },
+  "jvo0vs": {
+    "defaultMessage": "保存"
+  },
+  "teLZyZ": {
+    "defaultMessage": "高"
+  },
+  "wwjygy": {
+    "defaultMessage": "在线调整图片大小 - 支持 JPG, PNG, GIF, BMP, SVG 等. - 缩小图片尺寸 - 简单、安全."
+  },
+  "zygaPB": {
+    "defaultMessage": "在线调整图片大小"
   }
 }
