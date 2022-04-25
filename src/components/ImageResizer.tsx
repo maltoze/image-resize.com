@@ -127,7 +127,7 @@ const ImageResizer = () => {
   };
 
   return (
-    <div className="grid grid-cols-1 gap-8 py-8 md:py-20" ref={containerRef}>
+    <div className="grid grid-cols-1 gap-8 py-8 md:py-16" ref={containerRef}>
       <div className="flex flex-col gap-2">
         <div
           tabIndex={0}

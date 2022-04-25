@@ -64,7 +64,7 @@ const ImageSelector = () => {
           {isDragReject && <XIcon className="h-24 w-24" />}
         </div>
       </div>
-      <div className="mt-3 hidden text-center text-xs text-slate-500 md:block">
+      <div className="my-3 hidden text-center text-xs text-slate-500 md:block">
         {formatMessage(
           {
             defaultMessage: 'Paste image using <kbd>ctrl</kbd>+<kbd>v</kbd>',
