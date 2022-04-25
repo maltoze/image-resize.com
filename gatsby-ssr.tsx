@@ -3,6 +3,7 @@ import wrapPageElement from './src/wrapPageElement';
 const onRenderBody = ({ setHeadComponents }) => {
   setHeadComponents([
     <script
+      key="google-adsense"
       async
       src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9027498975434534"
       crossOrigin="anonymous"
