@@ -11,6 +11,9 @@ const config = {
       resolve: 'gatsby-plugin-google-gtag',
       options: {
         trackingIds: ['G-KFVQW5X785'],
+        pluginConfig: {
+          head: true,
+        },
       },
     },
     'gatsby-plugin-image',
