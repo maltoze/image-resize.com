@@ -12,6 +12,7 @@ import {
 } from '../store/jotai';
 import { supportedImageTypes } from '../utils/constants';
 import ImageWithMetaData from './ImageWithMetaData';
+import InFeedAd from './InFeedAd';
 
 const defaultPercent = 50;
 
@@ -132,7 +133,7 @@ const ImageResizer = () => {
         <div
           tabIndex={0}
           className={classNames(
-            'flex outline-none flex-row flex-wrap items-center justify-center gap-2 overflow-y-auto rounded-xl py-2 dark:border-slate-600 md:h-64',
+            'flex flex-row flex-wrap items-center justify-center gap-2 overflow-y-auto rounded-xl py-2 outline-none dark:border-slate-600 md:h-64',
             {
               'border-2 border-dashed border-slate-300 md:resize-y':
                 selectedImageFiles.length > 1,
@@ -214,6 +215,7 @@ const ImageResizer = () => {
           </button>
         </div>
       </div>
+      <InFeedAd />
     </div>
   );
 };

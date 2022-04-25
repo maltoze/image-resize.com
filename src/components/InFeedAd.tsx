@@ -6,7 +6,7 @@ const InFeedAd = () => (
       crossOrigin="anonymous"
     ></script>
     <ins
-      className="adsbygoogle h-32"
+      className="adsbygoogle my-2 h-20 md:h-32"
       style={{ display: 'block' }}
       data-ad-format="fluid"
       data-ad-layout-key="-fb+64+31-d5+c4"
