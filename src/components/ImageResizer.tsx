@@ -176,7 +176,7 @@ const ImageResizer = () => {
               <span className="mx-3 flex-shrink text-sm">or</span>
               <div className="flex-grow border-t"></div>
             </div> */}
-            <div className="flex w-full flex-row items-center gap-2 md:w-1/2">
+            <div className="flex w-full flex-row items-center space-x-6 md:w-1/2">
               <div className="basis-1/2">
                 <label htmlFor="width">
                   {formatMessage({ defaultMessage: 'Width' })}
