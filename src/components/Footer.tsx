@@ -10,7 +10,9 @@ const Footer = () => {
         })}
       </p>
       <p>
-        Copyright © {new Date().getFullYear()}- All rights reserved by
+        <span className="hidden md:inline">Copyright </span>©{' '}
+        {new Date().getFullYear()}{' '}
+        <span className="hidden md:inline">All rights reserved by </span>
         image-resize.com
       </p>
     </footer>
