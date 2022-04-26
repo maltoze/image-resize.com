@@ -1429,10 +1429,15 @@
   dependencies:
     "@hapi/hoek" "^9.0.0"
 
-"@headlessui/react@^0.0.0-insiders.cb7a969":
-  version "0.0.0-insiders.cb7a969"
-  resolved "https://registry.yarnpkg.com/@headlessui/react/-/react-0.0.0-insiders.cb7a969.tgz#f0b7e2a74cd57c3a3d77de2b46bc0ca3b51bb7c4"
-  integrity sha512-XF22nUzRNexsmU3sSj+UEOpFyiA0YSxw4tx3IjuQCB323GJcUL55bDkvytEdQHOR/AqdwyAz0yn6ftZnW1Wi2Q==
+"@headlessui/react@^1.6.0":
+  version "1.6.0"
+  resolved "https://registry.yarnpkg.com/@headlessui/react/-/react-1.6.0.tgz#5943c0b1e5b1a02566ab45f665a05188b1d079c5"
+  integrity sha512-PlDuytBC6iDC/uMvpANm5VpRSuayyXMEeo/dNIwAZNHCfhZUqDQgLXjGu48SHsvMw22Kc3c3u9TOAMZNg+1vzw==
+
+"@heroicons/react@^1.0.6":
+  version "1.0.6"
+  resolved "https://registry.yarnpkg.com/@heroicons/react/-/react-1.0.6.tgz#35dd26987228b39ef2316db3b1245c42eb19e324"
+  integrity sha512-JJCXydOFWMDpCP4q13iEplA503MQO3xLoZiKum+955ZCtHINWnx26CUxVxxFQu/uLb4LW3ge15ZpzIkXKkJ8oQ==
 
 "@humanwhocodes/config-array@^0.5.0":
   version "0.5.0"

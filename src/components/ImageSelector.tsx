@@ -4,10 +4,8 @@ import { useEffect } from 'react';
 import { useDropzone } from 'react-dropzone';
 import { useIntl } from 'react-intl';
 import useImageClipboard from '../hooks/imageClipboard';
-import PhotographIcon from '../icons/PhotographIcon';
-import UploadIcon from '../icons/UploadIcon';
-import XIcon from '../icons/XIcon';
 import { addImageFilesAtom } from '../store/jotai';
+import { PhotographIcon, UploadIcon, XIcon } from '@heroicons/react/outline';
 
 const ImageSelector = () => {
   const { formatMessage } = useIntl();

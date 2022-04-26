@@ -1,13 +1,11 @@
 import locales from '../i18n';
 import { Link } from 'gatsby';
 import useTheme from '../hooks/theme';
-import MoonIcon from '../icons/MoonIcon';
-import SunIcon from '../icons/SunIcon';
-import TranslateIcon from '../icons/TranslateIcon';
 import classNames from 'classnames';
-import ChevronDownSolidIcon from '../icons/ChevronDownSolidIcon';
 import { isBrowser } from '../utils/common';
 import { Menu, Transition } from '@headlessui/react';
+import { ChevronDownIcon } from '@heroicons/react/solid';
+import { MoonIcon, TranslateIcon, SunIcon } from '@heroicons/react/outline';
 
 const Header = () => {
   const [theme, setTheme] = useTheme();
@@ -22,14 +20,29 @@ const Header = () => {
       <div className="flex flex-none items-center gap-2">
         <button
           onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
-          className="px-2 outline-none hover:opacity-60"
+          className="relative mx-1 rounded-full outline-none hover:opacity-60"
         >
-          {theme === 'dark' ? <MoonIcon /> : <SunIcon />}
+          <MoonIcon
+            className={classNames(
+              'absolute h-6 w-6 opacity-0 transition-opacity duration-300 ease-in-out',
+              {
+                'opacity-100': theme === 'dark',
+              }
+            )}
+          />
+          <SunIcon
+            className={classNames(
+              'h-6 w-6 opacity-0 transition-opacity duration-300 ease-in-out',
+              {
+                'opacity-100': theme !== 'dark',
+              }
+            )}
+          />
         </button>
         <Menu as="div" className="relative">
           <Menu.Button className="flex items-center px-2 outline-none hover:opacity-60">
-            <TranslateIcon />
-            <ChevronDownSolidIcon className="h-4 w-4" />
+            <TranslateIcon className="h-6 w-6" />
+            <ChevronDownIcon className="h-4 w-4" />
           </Menu.Button>
           <Transition
             enter="transition duration-100 ease-out"

@@ -1,9 +1,8 @@
+import { ArrowSmRightIcon, XCircleIcon } from '@heroicons/react/outline';
 import { useAtomValue, useUpdateAtom } from 'jotai/utils';
 import React from 'react';
 import { useCallback, useMemo, useRef, useState } from 'react';
-import ArrowSmRightIcon from '../icons/ArrowSmRightIcon';
 import SpinIcon from '../icons/SpinIcon';
-import XCircleIcon from '../icons/XCircleIcon';
 import {
   imagesAtom,
   percentAtom,
