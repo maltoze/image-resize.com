@@ -12,7 +12,6 @@ import {
 } from '../store/jotai';
 import { supportedImageTypes } from '../utils/constants';
 import ImageWithMetaData from './ImageWithMetaData';
-import InFeedAd from './InFeedAd';
 
 const defaultPercent = 50;
 
@@ -128,7 +127,7 @@ const ImageResizer = () => {
   };
 
   return (
-    <div className="grid grid-cols-1 gap-8" ref={containerRef}>
+    <div className="grid grid-cols-1 gap-5 py-5" ref={containerRef}>
       <div className="flex flex-col gap-2">
         <div
           tabIndex={0}
@@ -215,7 +214,6 @@ const ImageResizer = () => {
           </button>
         </div>
       </div>
-      <InFeedAd />
     </div>
   );
 };
