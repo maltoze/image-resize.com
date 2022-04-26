@@ -36,7 +36,6 @@ const config = {
       __key: 'images',
     },
     'gatsby-plugin-postcss',
-    'gatsby-plugin-webpack-bundle-analyser-v2',
     ...prodPlugins,
   ],
 };

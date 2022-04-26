@@ -1,6 +1,7 @@
 import { CreatePageArgs, CreateWebpackConfigArgs } from 'gatsby';
 import locales from './src/i18n';
 import { removeTrailingSlash } from './src/utils/common';
+import { BundleAnalyzerPlugin } from 'webpack-bundle-analyzer';
 
 export function onCreatePage({ page, actions }: CreatePageArgs) {
   const { createPage } = actions;
@@ -17,7 +18,10 @@ export function onCreatePage({ page, actions }: CreatePageArgs) {
   });
 }
 
-export function onCreateWebpackConfig({ actions }: CreateWebpackConfigArgs) {
+export function onCreateWebpackConfig({
+  stage,
+  actions,
+}: CreateWebpackConfigArgs) {
   actions.setWebpackConfig({
     // https://formatjs.io/docs/guides/advanced-usage#react-intl-without-parser-40-smaller
     resolve: {
@@ -27,4 +31,9 @@ export function onCreateWebpackConfig({ actions }: CreateWebpackConfigArgs) {
       },
     },
   });
+  if (stage === 'build-javascript') {
+    actions.setWebpackConfig({
+      plugins: [new BundleAnalyzerPlugin()],
+    });
+  }
 }
