@@ -5,8 +5,17 @@
   "5IP7AP": {
     "defaultMessage": "Width"
   },
+  "7Rm1x6": {
+    "defaultMessage": "Frequently asked questions"
+  },
   "DqKd4r": {
     "defaultMessage": "Percent"
+  },
+  "F6mgp+": {
+    "defaultMessage": "If you can't find answer to your question in our FAQ, just contact us at"
+  },
+  "TdbNEG": {
+    "defaultMessage": "Still have a Question?"
   },
   "VkTlIS": {
     "defaultMessage": "or drop images here"
@@ -14,8 +23,53 @@
   "XmcDl5": {
     "defaultMessage": "Select Image"
   },
-  "fkoPmX": {
-    "defaultMessage": "This site won't upload your images."
+  "faq-answer-0": {
+    "defaultMessage": "Yes, absolutely. No hidden fees or subscriptions."
+  },
+  "faq-answer-1": {
+    "defaultMessage": "Yes, you can. We support all modern browsers."
+  },
+  "faq-answer-2": {
+    "defaultMessage": "No, we don't. We don't store your images. We don't even know where they are."
+  },
+  "faq-answer-3": {
+    "defaultMessage": "That's easy. Just follow the steps below. <br></br> - Select images from your device. <br></br> - Choose the size you want to resize them to. <br></br> - Click the \"Save\" button to download the resized images."
+  },
+  "faq-answer-4": {
+    "defaultMessage": "Yes, you can. Just select multiple images and click the button."
+  },
+  "faq-question-0": {
+    "defaultMessage": "Is this free?"
+  },
+  "faq-question-1": {
+    "defaultMessage": "Can I use it on my phone?"
+  },
+  "faq-question-2": {
+    "defaultMessage": "Do you keep my images?"
+  },
+  "faq-question-3": {
+    "defaultMessage": "How to resize images?"
+  },
+  "faq-question-4": {
+    "defaultMessage": "Can I batch resize images?"
+  },
+  "feature-text-0": {
+    "defaultMessage": "Select images from your device and resize them to your liking."
+  },
+  "feature-text-1": {
+    "defaultMessage": "We won't upload your images. All operations are done on your device."
+  },
+  "feature-text-2": {
+    "defaultMessage": "You can select multiple images and resize them at once."
+  },
+  "feature-title-0": {
+    "defaultMessage": "Easy to use"
+  },
+  "feature-title-1": {
+    "defaultMessage": "Privacy"
+  },
+  "feature-title-2": {
+    "defaultMessage": "Batch image resizing"
   },
   "jvo0vs": {
     "defaultMessage": "Save"
@@ -25,9 +79,6 @@
   },
   "wwjygy": {
     "defaultMessage": "Resize images online - Support JPG, PNG, GIF, BMP, SVG etc. - Reduce image size - Simply and safely."
-  },
-  "ybBEcq": {
-    "defaultMessage": "simply and safely"
   },
   "yyqVYb": {
     "defaultMessage": "Resize image(s)"

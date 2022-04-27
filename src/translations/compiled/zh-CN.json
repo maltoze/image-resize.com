@@ -39,10 +39,28 @@
       "value": "宽"
     }
   ],
+  "7Rm1x6": [
+    {
+      "type": 0,
+      "value": "常见问题"
+    }
+  ],
   "DqKd4r": [
     {
       "type": 0,
       "value": "百分比"
+    }
+  ],
+  "F6mgp+": [
+    {
+      "type": 0,
+      "value": "如果您还有其他问题，请联系我们"
+    }
+  ],
+  "TdbNEG": [
+    {
+      "type": 0,
+      "value": "还有问题？"
     }
   ],
   "VkTlIS": [
@@ -55,6 +73,132 @@
     {
       "type": 0,
       "value": "选择图片"
+    }
+  ],
+  "faq-answer-0": [
+    {
+      "type": 0,
+      "value": "是的，完全免费。没有任何隐藏或订阅的费用。"
+    }
+  ],
+  "faq-answer-1": [
+    {
+      "type": 0,
+      "value": "是的，完全可以。我们支持所有现代浏览器。"
+    }
+  ],
+  "faq-answer-2": [
+    {
+      "type": 0,
+      "value": "不，我们不会存储您的图片。我们不会把您的图片上传到服务器。"
+    }
+  ],
+  "faq-answer-3": [
+    {
+      "type": 0,
+      "value": "很简单。只需按照以下步骤操作： "
+    },
+    {
+      "children": [
+      ],
+      "type": 8,
+      "value": "br"
+    },
+    {
+      "type": 0,
+      "value": " - 从你的设备上选择图片。"
+    },
+    {
+      "children": [
+      ],
+      "type": 8,
+      "value": "br"
+    },
+    {
+      "type": 0,
+      "value": " - 选择你想调整的尺寸. "
+    },
+    {
+      "children": [
+      ],
+      "type": 8,
+      "value": "br"
+    },
+    {
+      "type": 0,
+      "value": " - 点击 \"保存\" 按钮下载调整后的图片."
+    }
+  ],
+  "faq-answer-4": [
+    {
+      "type": 0,
+      "value": "是的，你可以。只需选择多张图片并点击确定按钮。"
+    }
+  ],
+  "faq-question-0": [
+    {
+      "type": 0,
+      "value": "这是免费的吗？"
+    }
+  ],
+  "faq-question-1": [
+    {
+      "type": 0,
+      "value": "可以在手机上使用吗？"
+    }
+  ],
+  "faq-question-2": [
+    {
+      "type": 0,
+      "value": "你们会保存我的图片吗？"
+    }
+  ],
+  "faq-question-3": [
+    {
+      "type": 0,
+      "value": "如何调整图片大小？"
+    }
+  ],
+  "faq-question-4": [
+    {
+      "type": 0,
+      "value": "可以批量调整图片大小吗？"
+    }
+  ],
+  "feature-text-0": [
+    {
+      "type": 0,
+      "value": "从您的设备中选择图像，并根据您的需求调整图像尺寸"
+    }
+  ],
+  "feature-text-1": [
+    {
+      "type": 0,
+      "value": "我们不会上传您的图片。所有操作都是在本地进行的"
+    }
+  ],
+  "feature-text-2": [
+    {
+      "type": 0,
+      "value": "您可以一次选择多张图片并调整它们的大小"
+    }
+  ],
+  "feature-title-0": [
+    {
+      "type": 0,
+      "value": "使用简单"
+    }
+  ],
+  "feature-title-1": [
+    {
+      "type": 0,
+      "value": "安全"
+    }
+  ],
+  "feature-title-2": [
+    {
+      "type": 0,
+      "value": "批量操作"
     }
   ],
   "fkoPmX": [

@@ -35,10 +35,28 @@
       "value": "Width"
     }
   ],
+  "7Rm1x6": [
+    {
+      "type": 0,
+      "value": "Frequently asked questions"
+    }
+  ],
   "DqKd4r": [
     {
       "type": 0,
       "value": "Percent"
+    }
+  ],
+  "F6mgp+": [
+    {
+      "type": 0,
+      "value": "If you can't find answer to your question in our FAQ, just contact us at"
+    }
+  ],
+  "TdbNEG": [
+    {
+      "type": 0,
+      "value": "Still have a Question?"
     }
   ],
   "VkTlIS": [
@@ -53,10 +71,130 @@
       "value": "Select Image"
     }
   ],
-  "fkoPmX": [
+  "faq-answer-0": [
     {
       "type": 0,
-      "value": "This site won't upload your images."
+      "value": "Yes, absolutely. No hidden fees or subscriptions."
+    }
+  ],
+  "faq-answer-1": [
+    {
+      "type": 0,
+      "value": "Yes, you can. We support all modern browsers."
+    }
+  ],
+  "faq-answer-2": [
+    {
+      "type": 0,
+      "value": "No, we don't. We don't store your images. We don't even know where they are."
+    }
+  ],
+  "faq-answer-3": [
+    {
+      "type": 0,
+      "value": "That's easy. Just follow the steps below. "
+    },
+    {
+      "children": [
+      ],
+      "type": 8,
+      "value": "br"
+    },
+    {
+      "type": 0,
+      "value": " - Select images from your device. "
+    },
+    {
+      "children": [
+      ],
+      "type": 8,
+      "value": "br"
+    },
+    {
+      "type": 0,
+      "value": " - Choose the size you want to resize them to. "
+    },
+    {
+      "children": [
+      ],
+      "type": 8,
+      "value": "br"
+    },
+    {
+      "type": 0,
+      "value": " - Click the \"Save\" button to download the resized images."
+    }
+  ],
+  "faq-answer-4": [
+    {
+      "type": 0,
+      "value": "Yes, you can. Just select multiple images and click the button."
+    }
+  ],
+  "faq-question-0": [
+    {
+      "type": 0,
+      "value": "Is this free?"
+    }
+  ],
+  "faq-question-1": [
+    {
+      "type": 0,
+      "value": "Can I use it on my phone?"
+    }
+  ],
+  "faq-question-2": [
+    {
+      "type": 0,
+      "value": "Do you keep my images?"
+    }
+  ],
+  "faq-question-3": [
+    {
+      "type": 0,
+      "value": "How to resize images?"
+    }
+  ],
+  "faq-question-4": [
+    {
+      "type": 0,
+      "value": "Can I batch resize images?"
+    }
+  ],
+  "feature-text-0": [
+    {
+      "type": 0,
+      "value": "Select images from your device and resize them to your liking."
+    }
+  ],
+  "feature-text-1": [
+    {
+      "type": 0,
+      "value": "We won't upload your images. All operations are done on your device."
+    }
+  ],
+  "feature-text-2": [
+    {
+      "type": 0,
+      "value": "You can select multiple images and resize them at once."
+    }
+  ],
+  "feature-title-0": [
+    {
+      "type": 0,
+      "value": "Easy to use"
+    }
+  ],
+  "feature-title-1": [
+    {
+      "type": 0,
+      "value": "Privacy"
+    }
+  ],
+  "feature-title-2": [
+    {
+      "type": 0,
+      "value": "Batch image resizing"
     }
   ],
   "jvo0vs": [
@@ -75,12 +213,6 @@
     {
       "type": 0,
       "value": "Resize images online - Support JPG, PNG, GIF, BMP, SVG etc. - Reduce image size - Simply and safely."
-    }
-  ],
-  "ybBEcq": [
-    {
-      "type": 0,
-      "value": "simply and safely"
     }
   ],
   "yyqVYb": [

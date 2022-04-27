@@ -39,10 +39,28 @@
       "value": "寬度"
     }
   ],
+  "7Rm1x6": [
+    {
+      "type": 0,
+      "value": "常見問題"
+    }
+  ],
   "DqKd4r": [
     {
       "type": 0,
       "value": "百分"
+    }
+  ],
+  "F6mgp+": [
+    {
+      "type": 0,
+      "value": "如果您還有其他問題，请联系我们"
+    }
+  ],
+  "TdbNEG": [
+    {
+      "type": 0,
+      "value": "還有問題？"
     }
   ],
   "VkTlIS": [
@@ -55,6 +73,132 @@
     {
       "type": 0,
       "value": "選擇圖片"
+    }
+  ],
+  "faq-answer-0": [
+    {
+      "type": 0,
+      "value": "是的，一點沒錯。 沒有隱藏或訂閱費用。"
+    }
+  ],
+  "faq-answer-1": [
+    {
+      "type": 0,
+      "value": "是的你可以。 我們支持所有現代瀏覽器。"
+    }
+  ],
+  "faq-answer-2": [
+    {
+      "type": 0,
+      "value": "不，我們不会。 我們不存儲您的圖像。 我們不會上傳您的圖片。"
+    }
+  ],
+  "faq-answer-3": [
+    {
+      "type": 0,
+      "value": "很容易。 只需按照以下步驟： "
+    },
+    {
+      "children": [
+      ],
+      "type": 8,
+      "value": "br"
+    },
+    {
+      "type": 0,
+      "value": " - 從您的設備中選擇圖像。 "
+    },
+    {
+      "children": [
+      ],
+      "type": 8,
+      "value": "br"
+    },
+    {
+      "type": 0,
+      "value": " - 選擇您想要調整它們的大小。 "
+    },
+    {
+      "children": [
+      ],
+      "type": 8,
+      "value": "br"
+    },
+    {
+      "type": 0,
+      "value": " - 單擊 “保存” 按鈕下載調整大小後的圖像。"
+    }
+  ],
+  "faq-answer-4": [
+    {
+      "type": 0,
+      "value": "是的你可以。 只需選擇多個圖像並單擊確定按鈕。"
+    }
+  ],
+  "faq-question-0": [
+    {
+      "type": 0,
+      "value": "這是免費的嗎？"
+    }
+  ],
+  "faq-question-1": [
+    {
+      "type": 0,
+      "value": "我可以在手機上使用它嗎？"
+    }
+  ],
+  "faq-question-2": [
+    {
+      "type": 0,
+      "value": "你會保留我的圖片嗎？"
+    }
+  ],
+  "faq-question-3": [
+    {
+      "type": 0,
+      "value": "如何調整圖像大小？"
+    }
+  ],
+  "faq-question-4": [
+    {
+      "type": 0,
+      "value": "我可以批量調整圖像大小嗎？"
+    }
+  ],
+  "feature-text-0": [
+    {
+      "type": 0,
+      "value": "從您的設備中選擇圖像並根據自己的喜好調整它們的大小。"
+    }
+  ],
+  "feature-text-1": [
+    {
+      "type": 0,
+      "value": "我們不會上傳您的圖片。 所有操作都在您的設備上完成。"
+    }
+  ],
+  "feature-text-2": [
+    {
+      "type": 0,
+      "value": "您可以一次選擇多個圖像並調整它們的大小。"
+    }
+  ],
+  "feature-title-0": [
+    {
+      "type": 0,
+      "value": "易於使用"
+    }
+  ],
+  "feature-title-1": [
+    {
+      "type": 0,
+      "value": "安全"
+    }
+  ],
+  "feature-title-2": [
+    {
+      "type": 0,
+      "value": "批量操作"
     }
   ],
   "fkoPmX": [

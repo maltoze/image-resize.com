@@ -34,5 +34,62 @@
   },
   "zygaPB": {
     "defaultMessage": "在線調整圖像大小"
+  },
+  "7Rm1x6": {
+    "defaultMessage": "常見問題"
+  },
+  "F6mgp+": {
+    "defaultMessage": "如果您還有其他問題，请联系我们"
+  },
+  "TdbNEG": {
+    "defaultMessage": "還有問題？"
+  },
+  "faq-answer-0": {
+    "defaultMessage": "是的，一點沒錯。 沒有隱藏或訂閱費用。"
+  },
+  "faq-answer-1": {
+    "defaultMessage": "是的你可以。 我們支持所有現代瀏覽器。"
+  },
+  "faq-answer-2": {
+    "defaultMessage": "不，我們不会。 我們不存儲您的圖像。 我們不會上傳您的圖片。"
+  },
+  "faq-answer-3": {
+    "defaultMessage": "很容易。 只需按照以下步驟： <br></br> - 從您的設備中選擇圖像。 <br></br> - 選擇您想要調整它們的大小。 <br></br> - 單擊 “保存” 按鈕下載調整大小後的圖像。"
+  },
+  "faq-answer-4": {
+    "defaultMessage": "是的你可以。 只需選擇多個圖像並單擊確定按鈕。"
+  },
+  "faq-question-0": {
+    "defaultMessage": "這是免費的嗎？"
+  },
+  "faq-question-1": {
+    "defaultMessage": "我可以在手機上使用它嗎？"
+  },
+  "faq-question-2": {
+    "defaultMessage": "你會保留我的圖片嗎？"
+  },
+  "faq-question-3": {
+    "defaultMessage": "如何調整圖像大小？"
+  },
+  "faq-question-4": {
+    "defaultMessage": "我可以批量調整圖像大小嗎？"
+  },
+  "feature-text-0": {
+    "defaultMessage": "從您的設備中選擇圖像並根據自己的喜好調整它們的大小。"
+  },
+  "feature-text-1": {
+    "defaultMessage": "我們不會上傳您的圖片。 所有操作都在您的設備上完成。"
+  },
+  "feature-text-2": {
+    "defaultMessage": "您可以一次選擇多個圖像並調整它們的大小。"
+  },
+  "feature-title-0": {
+    "defaultMessage": "易於使用"
+  },
+  "feature-title-1": {
+    "defaultMessage": "安全"
+  },
+  "feature-title-2": {
+    "defaultMessage": "批量操作"
   }
 }

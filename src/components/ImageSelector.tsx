@@ -1,15 +1,18 @@
 import classNames from 'classnames';
-import { useUpdateAtom } from 'jotai/utils';
+import { useAtomValue, useUpdateAtom } from 'jotai/utils';
 import { useEffect } from 'react';
 import { useDropzone } from 'react-dropzone';
 import { useIntl } from 'react-intl';
 import useImageClipboard from '../hooks/imageClipboard';
-import { addImageFilesAtom } from '../store/jotai';
+import { addImageFilesAtom, selectedImageFilesAtom } from '../store/jotai';
 import { PhotographIcon, UploadIcon, XIcon } from '@heroicons/react/outline';
+import ImageResizer from './ImageResizer';
+import Heading from './Heading';
 
 const ImageSelector = () => {
   const { formatMessage } = useIntl();
 
+  const selectedImageFiles = useAtomValue(selectedImageFilesAtom);
   const addImageFiles = useUpdateAtom(addImageFilesAtom);
 
   useImageClipboard();
@@ -32,10 +35,11 @@ const ImageSelector = () => {
   }, [addImageFiles, acceptedFiles]);
 
   return (
-    <>
+    <section className='py-5 md:py-10'>
+      <Heading />
       <div
         className={classNames(
-          'relative flex cursor-pointer items-center justify-center rounded-xl border-dashed outline-none hover:border-slate-300 dark:hover:border-slate-600 md:h-64 md:bg-slate-100 md:dark:bg-slate-800'
+          'relative flex cursor-pointer items-center justify-center rounded-md border-dashed outline-none hover:border-slate-300 dark:hover:border-slate-600 md:h-60 md:bg-slate-100 md:dark:bg-slate-800'
         )}
         {...getRootProps()}
       >
@@ -72,7 +76,8 @@ const ImageSelector = () => {
           }
         )}
       </div>
-    </>
+      {selectedImageFiles.length > 0 && <ImageResizer />}
+    </section>
   );
 };
 export default ImageSelector;
