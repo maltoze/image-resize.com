@@ -60,7 +60,7 @@ const ImageWithMetaData = ({ file }: { file: File }) => {
         <img
           src={URL.createObjectURL(file)}
           alt={file.name}
-          className="h-36 w-full rounded border border-dashed border-slate-300 object-contain dark:border-slate-600"
+          className="bg-tiny-checkers h-36 w-full rounded border border-slate-300 object-contain dark:border-slate-600"
           onLoad={handleOnLoad}
           ref={imgRef}
         />
