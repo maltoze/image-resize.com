@@ -4,7 +4,7 @@
 
 @layer components {
   .btn {
-    @apply px-5 rounded py-1.5 text-center text-base text-gray-800;
+    @apply rounded px-5 py-1.5 text-center text-base text-gray-800;
 
     &-primary {
       @apply bg-primary-700 text-white dark:bg-primary-800;
@@ -55,7 +55,7 @@
 }
 
 .rc-slider-handle {
-  @apply absolute h-4 w-4 cursor-grab touch-pan-x rounded-full border-2 border-primary-500 bg-white;
+  @apply absolute h-6 w-6 cursor-grab touch-pan-x rounded-full border-2 border-primary-500 bg-white md:h-4 md:w-4;
 
   &:hover {
     @apply border-primary-400;
@@ -66,7 +66,7 @@
   }
 
   &:active {
-    @apply ring-[6px] ring-primary-500 ring-opacity-50;
+    @apply ring-8 ring-primary-500 ring-opacity-50;
   }
 }
 
