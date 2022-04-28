@@ -207,6 +207,12 @@
       "value": "本网站不会上传您的图片"
     }
   ],
+  "head.meta.description": [
+    {
+      "type": 0,
+      "value": "将图片调整到任何你想要的大小。几乎支持所有图片格式, JPEG, PNG, GIF, TIFF, BMP, ICO, SVG, 等。批量调整图片尺寸，压缩图片。"
+    }
+  ],
   "jvo0vs": [
     {
       "type": 0,
@@ -217,12 +223,6 @@
     {
       "type": 0,
       "value": "高"
-    }
-  ],
-  "wwjygy": [
-    {
-      "type": 0,
-      "value": "在线调整图片大小 - 支持 JPG, PNG, GIF, BMP, SVG 等. - 缩小图片尺寸 - 简单、安全."
     }
   ],
   "ybBEcq": [

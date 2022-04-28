@@ -71,14 +71,14 @@
   "feature-title-2": {
     "defaultMessage": "Batch image resizing"
   },
+  "head.meta.description": {
+    "defaultMessage": "Resize image files to any size you want. Support for almost all image formats, like JPEG, PNG, GIF, TIFF, BMP, ICO, SVG, etc. Resize images in bulk. Reduce image size."
+  },
   "jvo0vs": {
     "defaultMessage": "Save"
   },
   "teLZyZ": {
     "defaultMessage": "Height"
-  },
-  "wwjygy": {
-    "defaultMessage": "Resize images online - Support JPG, PNG, GIF, BMP, SVG etc. - Reduce image size - Simply and safely."
   },
   "yyqVYb": {
     "defaultMessage": "Resize image(s)"

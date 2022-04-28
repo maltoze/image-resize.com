@@ -91,5 +91,8 @@
   },
   "feature-title-2": {
     "defaultMessage": "批量操作"
+  },
+  "head.meta.description": {
+    "defaultMessage": "將圖片調整到任何你想要的大小。幾乎支持所有圖片格式, JPEG, PNG, GIF, TIFF, BMP, ICO, SVG, 等。批量調整圖片尺寸，壓縮圖片。"
   }
 }

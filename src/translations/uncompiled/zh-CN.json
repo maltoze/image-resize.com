@@ -29,9 +29,6 @@
   "teLZyZ": {
     "defaultMessage": "高"
   },
-  "wwjygy": {
-    "defaultMessage": "在线调整图片大小 - 支持 JPG, PNG, GIF, BMP, SVG 等. - 缩小图片尺寸 - 简单、安全."
-  },
   "zygaPB": {
     "defaultMessage": "在线调整图片大小"
   },
@@ -91,5 +88,8 @@
   },
   "feature-title-2": {
     "defaultMessage": "批量操作"
+  },
+  "head.meta.description": {
+    "defaultMessage": "将图片调整到任何你想要的大小。几乎支持所有图片格式, JPEG, PNG, GIF, TIFF, BMP, ICO, SVG, 等。批量调整图片尺寸，压缩图片。"
   }
 }

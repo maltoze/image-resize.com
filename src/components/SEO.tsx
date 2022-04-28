@@ -1,5 +1,11 @@
 import { Helmet } from 'react-helmet';
-import { useIntl } from 'react-intl';
+import { defineMessage, useIntl } from 'react-intl';
+
+const descriptionMessage = defineMessage({
+  id: 'head.meta.description',
+  defaultMessage:
+    'Resize image files to any size you want. Support for almost all image formats, like JPEG, PNG, GIF, TIFF, BMP, ICO, SVG, etc. Resize images in bulk. Reduce image size.',
+});
 
 const SEO = () => {
   const { formatMessage, locale } = useIntl();
@@ -12,23 +18,14 @@ const SEO = () => {
         })}
         {' | image-resize.com'}
       </title>
-      <meta
-        name="description"
-        content={formatMessage({
-          defaultMessage:
-            'Resize images online - Support JPG, PNG, GIF, BMP, SVG etc. - Reduce image size - Simply and safely.',
-        })}
-      />
+      <meta name="description" content={formatMessage(descriptionMessage)} />
       <meta
         property="og:title"
         content={formatMessage({ defaultMessage: 'Resize Images Online' })}
       />
       <meta
         property="og:description"
-        content={formatMessage({
-          defaultMessage:
-            'Resize images online - Support JPG, PNG, GIF, BMP, SVG etc. - Reduce image size - Simply and safely.',
-        })}
+        content={formatMessage(descriptionMessage)}
       />
       <meta property="og:site_name" content="image-resize.com" />
     </Helmet>
