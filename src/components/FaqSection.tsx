@@ -100,7 +100,7 @@ const FaqSection = () => {
                   leaveTo="transform scale-95 opacity-0"
                 >
                   <Disclosure.Panel className="-mt-1 px-4 pb-4 text-slate-500 md:px-5 md:pb-5">
-                    <pre className="whitespace-pre-wrap font-sans leading-relaxed md:leading-loose">
+                    <p className="leading-relaxed md:leading-loose">
                       <FormattedMessage
                         {...messages[
                           `faq-answer-${index}` as keyof typeof messages
@@ -109,7 +109,7 @@ const FaqSection = () => {
                           br: () => <br />,
                         }}
                       />
-                    </pre>
+                    </p>
                   </Disclosure.Panel>
                 </Transition>
               </>
@@ -126,7 +126,7 @@ const FaqSection = () => {
             defaultMessage:
               "If you can't find answer to your question in our FAQ, just contact us at",
           })}{' '}
-          <span className="bg-gradient-to-tr from-primary-700 to-sky-600 bg-clip-text text-transparent">
+          <span className="break-words bg-gradient-to-tr from-primary-700 to-sky-600 bg-clip-text text-transparent">
             help@image-resize.com
           </span>
         </p>
