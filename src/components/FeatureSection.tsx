@@ -16,7 +16,7 @@ const messages = defineMessages({
   },
   'feature-title-2': {
     id: 'feature-title-2',
-    defaultMessage: 'Batch image resizing',
+    defaultMessage: 'Batch resizing',
   },
   'feature-text-0': {
     id: 'feature-text-0',
@@ -26,7 +26,7 @@ const messages = defineMessages({
   'feature-text-1': {
     id: 'feature-text-1',
     defaultMessage:
-      "We won't upload your images. All operations are done on your device.",
+      "We won't upload your images. All work is done on your device.",
   },
   'feature-text-2': {
     id: 'feature-text-2',

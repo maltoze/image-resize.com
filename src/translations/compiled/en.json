@@ -170,7 +170,7 @@
   "feature-text-1": [
     {
       "type": 0,
-      "value": "We won't upload your images. All operations are done on your device."
+      "value": "We won't upload your images. All work is done on your device."
     }
   ],
   "feature-text-2": [
@@ -194,7 +194,7 @@
   "feature-title-2": [
     {
       "type": 0,
-      "value": "Batch image resizing"
+      "value": "Batch resizing"
     }
   ],
   "head.meta.description": [

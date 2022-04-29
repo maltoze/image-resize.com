@@ -57,7 +57,7 @@
     "defaultMessage": "Select images from your device and resize them to your liking."
   },
   "feature-text-1": {
-    "defaultMessage": "We won't upload your images. All operations are done on your device."
+    "defaultMessage": "We won't upload your images. All work is done on your device."
   },
   "feature-text-2": {
     "defaultMessage": "You can select multiple images and resize them at once."
@@ -69,7 +69,7 @@
     "defaultMessage": "Privacy"
   },
   "feature-title-2": {
-    "defaultMessage": "Batch image resizing"
+    "defaultMessage": "Batch resizing"
   },
   "head.meta.description": {
     "defaultMessage": "Resize image files to any size you want. Support for almost all image formats, like JPEG, PNG, GIF, TIFF, BMP, ICO, SVG, etc. Resize images in bulk. Reduce image size."
