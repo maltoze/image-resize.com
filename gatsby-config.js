@@ -36,6 +36,7 @@ const config = {
       __key: 'images',
     },
     'gatsby-plugin-postcss',
+    `gatsby-plugin-mdx`,
     ...prodPlugins,
   ],
 };
