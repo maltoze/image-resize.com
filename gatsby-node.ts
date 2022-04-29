@@ -34,6 +34,7 @@ export function onCreateWebpackConfig({
   if (stage === 'build-javascript') {
     actions.setWebpackConfig({
       plugins: [new BundleAnalyzerPlugin()],
+      devtool: false,
     });
   }
 }
