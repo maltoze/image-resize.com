@@ -23,6 +23,7 @@ const config = {
       resolve: 'gatsby-plugin-manifest',
       options: {
         icon: 'src/images/icon.png',
+        display: `standalone`,
       },
     },
     'gatsby-plugin-sharp',
