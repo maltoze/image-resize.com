@@ -8,14 +8,23 @@
   "7Rm1x6": {
     "defaultMessage": "Frequently asked questions"
   },
+  "9Xql9G": {
+    "defaultMessage": "fast, simple, and"
+  },
   "DqKd4r": {
     "defaultMessage": "Percent"
   },
   "F6mgp+": {
     "defaultMessage": "If you can't find answer to your question in our FAQ, just contact us at"
   },
+  "IRioK2": {
+    "defaultMessage": "privacy"
+  },
   "TdbNEG": {
     "defaultMessage": "Still have a Question?"
+  },
+  "UsI+7u": {
+    "defaultMessage": "Resize Images"
   },
   "VkTlIS": {
     "defaultMessage": "or drop images here"
@@ -51,7 +60,7 @@
     "defaultMessage": "How to resize images?"
   },
   "faq-question-4": {
-    "defaultMessage": "Can I batch resize images?"
+    "defaultMessage": "Can I resize images in bulk?"
   },
   "feature-text-0": {
     "defaultMessage": "Select images from your device and resize them to your liking."
@@ -79,9 +88,6 @@
   },
   "teLZyZ": {
     "defaultMessage": "Height"
-  },
-  "yyqVYb": {
-    "defaultMessage": "Resize image(s)"
   },
   "zygaPB": {
     "defaultMessage": "Resize Images Online"

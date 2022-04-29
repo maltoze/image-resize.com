@@ -22,7 +22,7 @@ const messages = defineMessages({
   },
   'faq-question-4': {
     id: 'faq-question-4',
-    defaultMessage: 'Can I batch resize images?',
+    defaultMessage: 'Can I resize images in bulk?',
   },
   'faq-answer-0': {
     id: 'faq-answer-0',
@@ -126,7 +126,7 @@ const FaqSection = () => {
             defaultMessage:
               "If you can't find answer to your question in our FAQ, just contact us at",
           })}{' '}
-          <span className="break-words bg-gradient-to-tr from-primary-700 to-sky-600 bg-clip-text text-transparent">
+          <span className="break-all bg-gradient-to-tr from-primary-700 to-sky-600 bg-clip-text text-transparent">
             help@image-resize.com
           </span>
         </p>

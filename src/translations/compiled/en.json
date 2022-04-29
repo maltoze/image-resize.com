@@ -41,6 +41,12 @@
       "value": "Frequently asked questions"
     }
   ],
+  "9Xql9G": [
+    {
+      "type": 0,
+      "value": "fast, simple, and"
+    }
+  ],
   "DqKd4r": [
     {
       "type": 0,
@@ -53,10 +59,22 @@
       "value": "If you can't find answer to your question in our FAQ, just contact us at"
     }
   ],
+  "IRioK2": [
+    {
+      "type": 0,
+      "value": "privacy"
+    }
+  ],
   "TdbNEG": [
     {
       "type": 0,
       "value": "Still have a Question?"
+    }
+  ],
+  "UsI+7u": [
+    {
+      "type": 0,
+      "value": "Resize Images"
     }
   ],
   "VkTlIS": [
@@ -158,7 +176,7 @@
   "faq-question-4": [
     {
       "type": 0,
-      "value": "Can I batch resize images?"
+      "value": "Can I resize images in bulk?"
     }
   ],
   "feature-text-0": [
@@ -213,12 +231,6 @@
     {
       "type": 0,
       "value": "Height"
-    }
-  ],
-  "yyqVYb": [
-    {
-      "type": 0,
-      "value": "Resize image(s)"
     }
   ],
   "zygaPB": [

@@ -94,5 +94,14 @@
   },
   "head.meta.description": {
     "defaultMessage": "將圖片調整到任何你想要的大小。幾乎支持所有圖片格式, JPEG, PNG, GIF, TIFF, BMP, ICO, SVG, 等。批量調整圖片尺寸，壓縮圖片。"
+  },
+  "UsI+7u": {
+    "defaultMessage": "調整圖像大小"
+  },
+  "9Xql9G": {
+    "defaultMessage": "快速、簡單、"
+  },
+  "IRioK2": {
+    "defaultMessage": "安全"
   }
 }

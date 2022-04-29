@@ -4,14 +4,13 @@ import useTheme from '../hooks/theme';
 import classNames from 'classnames';
 import { isBrowser } from '../utils/common';
 import { Menu, Transition } from '@headlessui/react';
-import { ChevronDownIcon } from '@heroicons/react/solid';
-import { MoonIcon, TranslateIcon, SunIcon } from '@heroicons/react/outline';
+import { MoonIcon, SunIcon, GlobeAltIcon } from '@heroicons/react/outline';
 
 const Header = () => {
   const [theme, setTheme] = useTheme();
 
   return (
-    <div className="mx-auto flex min-h-[4rem] w-full max-w-4xl items-center p-2">
+    <div className="z-20 mx-auto flex min-h-[4rem] w-full max-w-4xl items-center p-2">
       <div className="flex-1">
         <Link className="px-3 text-xl font-semibold normal-case" to="/">
           image-resize
@@ -41,8 +40,7 @@ const Header = () => {
         </button>
         <Menu as="div" className="relative">
           <Menu.Button className="flex items-center px-2 outline-none hover:opacity-60">
-            <TranslateIcon className="h-6 w-6" />
-            <ChevronDownIcon className="h-4 w-4" />
+            <GlobeAltIcon className="h-6 w-6" />
           </Menu.Button>
           <Transition
             enter="transition duration-100 ease-out"

@@ -2,7 +2,7 @@ import classNames from 'classnames';
 import { useAtom, useAtomValue } from 'jotai';
 import { useUpdateAtom } from 'jotai/utils';
 import Slider from 'rc-slider';
-import { useCallback, useEffect, useRef, useState } from 'react';
+import { useCallback, useEffect, useState } from 'react';
 import { useIntl } from 'react-intl';
 import {
   imagesAtom,
@@ -11,7 +11,6 @@ import {
   selectedImageFilesAtom,
 } from '../store/jotai';
 import { supportedImageTypes } from '../utils/constants';
-import ImageWithMetaData from './ImageWithMetaData';
 
 const defaultPercent = 50;
 
@@ -28,9 +27,7 @@ const ImageResizer = () => {
 
   const [images] = useAtom(imagesAtom);
 
-  const containerRef = useRef<HTMLDivElement>(null);
   useEffect(() => {
-    containerRef.current?.scrollIntoView({ behavior: 'smooth' });
     setAfterPercent(defaultPercent);
   }, [setAfterPercent]);
 
@@ -127,92 +124,70 @@ const ImageResizer = () => {
   };
 
   return (
-    <div className="grid grid-cols-1 gap-5 py-5" ref={containerRef}>
-      <div className="flex flex-col gap-2">
-        <div
-          tabIndex={0}
-          className={classNames(
-            'flex flex-row flex-wrap items-center justify-center gap-2 overflow-y-auto rounded-xl py-2 outline-none dark:border-slate-600 md:h-64',
-            {
-              'border-2 border-dashed border-slate-300 md:resize-y':
-                selectedImageFiles.length > 1,
-            }
-          )}
-        >
-          {selectedImageFiles.map((file) => (
-            <ImageWithMetaData file={file} key={`${file.name}`} />
-          ))}
-        </div>
-      </div>
-      <div className="flex flex-col items-center justify-center gap-2">
-        <div className="w-full md:w-1/2">
-          <label>{formatMessage({ defaultMessage: 'Percent' })}</label>
-          <div className="flex items-center gap-4">
-            <Slider
-              ariaLabelForHandle={'Percent'}
-              min={1}
-              value={percent ?? 1}
-              onChange={(value) => handleSliderOnChange(value as number)}
-              onAfterChange={(value) => setAfterPercent(value as number)}
-              handleRender={SliderHandleRender}
+    <div
+      className={classNames(
+        'flex flex-col space-y-3 py-2 text-sm duration-300 md:w-1/3 md:px-4'
+      )}
+    >
+      <div className="">
+        <label>{formatMessage({ defaultMessage: 'Percent' })}</label>
+        <div className="flex items-center space-x-3">
+          <Slider
+            ariaLabelForHandle={'Percent'}
+            min={5}
+            step={5}
+            value={percent ?? 5}
+            onChange={(value) => handleSliderOnChange(value as number)}
+            onAfterChange={(value) => setAfterPercent(value as number)}
+            handleRender={SliderHandleRender}
+          />
+          <div className="relative flex w-1/3 items-center md:w-1/2">
+            <input
+              type="text"
+              className="input input-xs border-opacity-0 pr-5 text-right shadow-none hover:border-opacity-100 focus:border-opacity-100 dark:border-opacity-0 dark:bg-slate-900 dark:hover:border-opacity-100"
+              value={textPercent ?? ''}
+              onChange={(e) => setTextPercent(e.target.value)}
+              onBlur={handlePercentInputOnBlur}
+              onKeyDown={handleTextPercentKeyDown}
             />
-            <div className="flex w-1/5 items-center">
-              <input
-                type="text"
-                className="input input-xs border-opacity-0 pr-0.5 text-right shadow-none hover:border-opacity-100 focus:border-opacity-100 dark:border-opacity-0 dark:bg-slate-900 dark:hover:border-opacity-100"
-                value={textPercent ?? ''}
-                onChange={(e) => setTextPercent(e.target.value)}
-                onBlur={handlePercentInputOnBlur}
-                onKeyDown={handleTextPercentKeyDown}
-              />
-              <span>%</span>
-            </div>
+            <span className="absolute right-1">%</span>
           </div>
         </div>
-        {selectedImageFiles.length === 1 && (
-          <>
-            {/* <div className="flex w-full items-center px-10 md:w-1/2">
-              <div className="flex-grow border-t"></div>
-              <span className="mx-3 flex-shrink text-sm">or</span>
-              <div className="flex-grow border-t"></div>
-            </div> */}
-            <div className="flex w-full flex-row items-center space-x-6 md:w-1/2">
-              <div className="basis-1/2">
-                <label htmlFor="width">
-                  {formatMessage({ defaultMessage: 'Width' })}
-                </label>
-                <input
-                  id="width"
-                  type="number"
-                  className="input"
-                  min={0}
-                  value={width}
-                  name="width"
-                  onChange={handleDimensionsOnChange}
-                />
-              </div>
-              <div className="basis-1/2">
-                <label htmlFor="height">
-                  {formatMessage({ defaultMessage: 'Height' })}
-                </label>
-                <input
-                  id="height"
-                  type="number"
-                  className="input"
-                  min={0}
-                  value={height}
-                  name="height"
-                  onChange={handleDimensionsOnChange}
-                />
-              </div>
-            </div>
-          </>
-        )}
-        <div className="mt-3">
-          <button className="btn btn-primary" onClick={resize}>
-            {formatMessage({ defaultMessage: 'Save' })}
-          </button>
-        </div>
+      </div>
+      <div className="space-y-1">
+        <label htmlFor="width">
+          {formatMessage({ defaultMessage: 'Width' })}
+        </label>
+        <input
+          id="width"
+          type="number"
+          className="input"
+          disabled={selectedImageFiles.length > 1}
+          min={0}
+          value={width}
+          name="width"
+          onChange={handleDimensionsOnChange}
+        />
+      </div>
+      <div className="space-y-1">
+        <label htmlFor="height">
+          {formatMessage({ defaultMessage: 'Height' })}
+        </label>
+        <input
+          id="height"
+          type="number"
+          className="input"
+          disabled={selectedImageFiles.length > 1}
+          min={0}
+          value={height}
+          name="height"
+          onChange={handleDimensionsOnChange}
+        />
+      </div>
+      <div className="text-center">
+        <button className="btn btn-primary rounded-full px-6" onClick={resize}>
+          {formatMessage({ defaultMessage: 'Save' })}
+        </button>
       </div>
     </div>
   );

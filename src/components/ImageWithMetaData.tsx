@@ -1,21 +1,19 @@
-import { ArrowSmRightIcon, XCircleIcon } from '@heroicons/react/outline';
+import { XCircleIcon } from '@heroicons/react/outline';
 import { useAtomValue, useUpdateAtom } from 'jotai/utils';
 import React from 'react';
 import { useCallback, useMemo, useRef, useState } from 'react';
-import SpinIcon from '../icons/SpinIcon';
 import {
   imagesAtom,
   percentAtom,
-  percentSliderDragging,
   pushImagesAtom,
   selectedImageFilesAtom,
 } from '../store/jotai';
+import { formatBytes } from '../utils/common';
 
 const ImageWithMetaData = ({ file }: { file: File }) => {
   const imgRef = useRef<HTMLImageElement>(null);
   const setSelectedImageFiles = useUpdateAtom(selectedImageFilesAtom);
   const percent = useAtomValue(percentAtom) || 0;
-  const dragging = useAtomValue(percentSliderDragging);
   const [dimensions, setDimensions] = useState({
     width: 0,
     height: 0,
@@ -45,14 +43,18 @@ const ImageWithMetaData = ({ file }: { file: File }) => {
     [file.type, pushImages]
   );
 
-  const handleOnDelete = useCallback(() => {
-    setImages((previous) =>
-      previous.filter((img) => img.el.alt !== imgRef.current?.alt)
-    );
-    setSelectedImageFiles((previous) =>
-      previous.filter((image) => image.name !== file.name)
-    );
-  }, [file, setSelectedImageFiles, setImages]);
+  const handleOnDelete = useCallback(
+    (e) => {
+      e.stopPropagation();
+      setImages((previous) =>
+        previous.filter((img) => img.el.alt !== imgRef.current?.alt)
+      );
+      setSelectedImageFiles((previous) =>
+        previous.filter((image) => image.name !== file.name)
+      );
+    },
+    [file, setSelectedImageFiles, setImages]
+  );
 
   const memoImg = useMemo(
     () => (
@@ -65,10 +67,10 @@ const ImageWithMetaData = ({ file }: { file: File }) => {
           ref={imgRef}
         />
         <button
-          className="absolute top-0 right-0 -mt-3 -mr-3 "
+          className="absolute top-0 right-0 -mt-3 -mr-3"
           onClick={handleOnDelete}
         >
-          <XCircleIcon className="h-6 w-6 text-red-600 opacity-0 transition delay-100 ease-in-out hover:scale-125 group-hover:opacity-100 group-active:opacity-100 dark:text-red-800" />
+          <XCircleIcon className="h-6 w-6 text-red-600 opacity-0 transition delay-100 ease-in-out hover:scale-125 group-hover:opacity-100 group-active:opacity-100 " />
         </button>
       </div>
     ),
@@ -85,29 +87,11 @@ const ImageWithMetaData = ({ file }: { file: File }) => {
         {file.name}
       </div>
       <div className="whitespace-nowrap">
-        <span className="rounded bg-slate-500 px-1 text-white dark:text-slate-200">{`${dimensions.width}x${dimensions.height}`}</span>
-        <ArrowSmRightIcon className="inline h-4 w-4 " />
-        {dragging ? (
-          <SpinIcon className="inline h-3 w-3 animate-spin text-green-600" />
-        ) : (
-          <span className="rounded bg-green-600 px-1 text-white transition delay-200 ease-in-out dark:text-slate-200">
-            {`${afterDimensions.width}x${afterDimensions.height}`}
-          </span>
-        )}
+        <span className="rounded px-1">{`${dimensions.width}x${dimensions.height}`}</span>
       </div>
-      {/* <div>
-        <span className="rounded bg-slate-500 px-1 text-white dark:text-slate-200">
-          {formatBytes(file.size)}
-        </span>
-        <ArrowSmRightIcon className="inline h-4 w-4 " />
-        {dragging ? (
-          <SpinIcon className="inline h-3 w-3 animate-spin text-green-600" />
-        ) : (
-          <span className="rounded bg-green-600 px-1 text-white dark:text-slate-200">
-            {afterFileSize}
-          </span>
-        )}
-      </div> */}
+      <div>
+        <span className="rounded px-1">{formatBytes(file.size)}</span>
+      </div>
     </div>
   );
 };
