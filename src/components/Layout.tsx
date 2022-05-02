@@ -13,7 +13,7 @@ const Layout = ({ children }: LayoutProps) => {
       <div className="flex min-h-screen flex-col bg-white text-slate-900 dark:bg-slate-900 dark:text-slate-400">
         <SEO />
         <Header />
-        <main className="mx-auto max-w-3xl px-5">{children}</main>
+        <main className="sm:mx-auto sm:max-w-xl md:max-w-2xl lg:max-w-3xl px-5">{children}</main>
         <Footer />
       </div>
     </>
