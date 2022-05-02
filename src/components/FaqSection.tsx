@@ -126,9 +126,9 @@ const FaqSection = () => {
             defaultMessage:
               "If you can't find answer to your question in our FAQ, just contact us at",
           })}{' '}
-          <span className="break-all bg-gradient-to-tr from-primary-700 to-sky-600 bg-clip-text text-transparent">
+          <a href="mailto:help@image-resize.com" className="underline">
             help@image-resize.com
-          </span>
+          </a>
         </p>
       </div>
     </section>
