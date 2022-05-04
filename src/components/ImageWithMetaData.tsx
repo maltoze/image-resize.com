@@ -28,7 +28,6 @@ const ImageWithMetaData = ({ file }: { file: File }) => {
       (afterDimensions[dimensionsKey] * (percent / 100)).toFixed(0)
     );
   });
-  // const afterFileSize = formatBytes(file.size * (percent / 100));
 
   const handleOnLoad = useCallback(
     (e: React.SyntheticEvent<HTMLImageElement>) => {

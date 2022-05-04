@@ -15,13 +15,11 @@ export const percentSliderDragging = atom(false);
 
 type ImageProps = {
   type: string;
-  el: HTMLImageElement;
+  name: string;
+  width: number;
+  height: number;
+  size: number;
+  afterSize: number;
+  dataURL: string;
 };
-export const imagesAtom = atom<ImageProps[]>([]);
-export const pushImagesAtom = atom(null, (get, set, by: ImageProps) => {
-  const previousImages = get(imagesAtom);
-  const sameEls = previousImages.filter((img) => img.el.alt === by.el.alt);
-  if (sameEls.length === 0) {
-    set(imagesAtom, [...previousImages, by]);
-  }
-});
+export const imagesAtom = atom<{ [key: string]: Partial<ImageProps> }>({});

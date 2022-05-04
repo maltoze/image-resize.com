@@ -103,20 +103,20 @@ const ImageResizer = () => {
       name: string;
       value: number;
     };
-    const firstImage = images[0];
-    const { naturalWidth, naturalHeight } = firstImage.el;
-    const aspectRatio = naturalWidth / naturalHeight;
+    const firstImage = images[Object.keys(images)[0]];
+    const { width, height } = firstImage;
+    const aspectRatio = width / height;
     let curPercent, limitedValue;
     if (name === 'width') {
-      limitedValue = value > naturalWidth ? naturalWidth : value;
+      limitedValue = value > width ? width : value;
       setWidth(limitedValue);
       setHeight(Math.round(limitedValue / aspectRatio));
-      curPercent = (limitedValue / firstImage.el.naturalWidth) * 100;
+      curPercent = (limitedValue / width) * 100;
     } else {
-      limitedValue = value > naturalHeight ? naturalHeight : value;
+      limitedValue = value > height ? height : value;
       setWidth(Math.round(limitedValue * aspectRatio));
       setHeight(limitedValue);
-      curPercent = (limitedValue / firstImage.el.naturalHeight) * 100;
+      curPercent = (limitedValue / height) * 100;
     }
     setPercent(curPercent);
     setTextPercent(Math.round(curPercent));
