@@ -19,7 +19,11 @@ type ImageProps = {
   width: number;
   height: number;
   size: number;
-  afterSize: number;
-  dataURL: string;
+  file: File;
+  el: HTMLImageElement;
+  resized: {
+    size?: number;
+    dataURL?: string;
+  };
 };
-export const imagesAtom = atom<{ [key: string]: Partial<ImageProps> }>({});
+export const imagesAtom = atom<{ [key: string]: ImageProps }>({});

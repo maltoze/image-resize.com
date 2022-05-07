@@ -38,12 +38,12 @@ const ImageResizer = () => {
 
   const updateDimensions = useCallback(
     (percent: number) => {
-      if (images.length === 1) {
-        const firstImage = images[0];
-        const { naturalWidth, naturalHeight } = firstImage.el;
+      if (Object.keys(images).length === 1) {
+        const firstImage = images[Object.keys(images)[0]];
+        const { width, height } = firstImage;
         const scale = percent / 100;
-        setWidth(Math.round(naturalWidth * scale));
-        setHeight(Math.round(naturalHeight * scale));
+        setWidth(Math.round(width * scale));
+        setHeight(Math.round(height * scale));
       }
     },
     [images]
@@ -75,19 +75,20 @@ const ImageResizer = () => {
 
   const resize = () => {
     const canvas = document.createElement('canvas');
-    images.forEach((image) => {
-      canvas.width = image.el.naturalWidth * (percent / 100);
-      canvas.height = image.el.naturalHeight * (percent / 100);
+    Object.keys(images).forEach((key) => {
+      const { width, height, type, name, el } = images[key];
+      canvas.width = width * (percent / 100);
+      canvas.height = height * (percent / 100);
       const ctx = canvas.getContext('2d');
-      ctx?.drawImage(image.el, 0, 0, canvas.width, canvas.height);
+      ctx?.drawImage(el, 0, 0, canvas.width, canvas.height);
 
       let imgType, imgName;
-      if (supportedImageTypes.includes(image.type)) {
-        imgType = image.type;
-        imgName = image.el.alt;
+      if (supportedImageTypes.includes(type)) {
+        imgType = type;
+        imgName = name;
       } else {
         imgType = 'image/png';
-        imgName = `${image.el.alt}.png`;
+        imgName = `${name}.png`;
       }
 
       const dataURL = canvas.toDataURL(imgType);

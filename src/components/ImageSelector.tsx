@@ -7,7 +7,7 @@ import useImageClipboard from '../hooks/imageClipboard';
 import { addImageFilesAtom, selectedImageFilesAtom } from '../store/jotai';
 import { PhotographIcon, UploadIcon, XIcon } from '@heroicons/react/outline';
 import ImageResizer from './ImageResizer';
-import ImageWithMetaData from './ImageWithMetaData';
+import ImageTable from './ImageTable';
 
 const ImageSelector = () => {
   const { formatMessage } = useIntl();
@@ -45,9 +45,9 @@ const ImageSelector = () => {
       >
         <div
           className={classNames(
-            'flex items-center relative justify-center rounded-lg border-dashed border-slate-300 pt-2 outline-none dark:border-slate-500 md:h-64',
+            'relative flex items-center justify-center rounded-lg border-dashed border-slate-300 pt-2 outline-none dark:border-slate-500 md:h-64',
             {
-              'cursor-default flex-row flex-wrap overflow-y-auto border':
+              'cursor-default overflow-y-auto border':
                 selectedImageFiles.length > 0,
             },
             {
@@ -70,11 +70,7 @@ const ImageSelector = () => {
               </div>
             </div>
           ) : (
-            <>
-              {selectedImageFiles.map((file) => (
-                <ImageWithMetaData file={file} key={`${file.name}`} />
-              ))}
-            </>
+            <ImageTable />
           )}
           <div
             className={classNames(
