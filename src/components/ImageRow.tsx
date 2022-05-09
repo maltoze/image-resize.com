@@ -22,18 +22,11 @@ const ImageListItem = ({ file, resizedSize }: ImageListItemProps) => {
         setDimensions({ width: naturalWidth, height: naturalHeight });
         setImages((previous) => ({
           ...previous,
-          [file.name]: {
-            width: naturalWidth,
-            height: naturalHeight,
-            type: file.type,
-            size: file.size,
-            name: file.name,
-            el: imgRef.current as HTMLImageElement,
-          },
+          [file.name]: { file, el: imgRef.current as HTMLImageElement },
         }));
       }
     },
-    [file.name, file.size, file.type, setImages]
+    [file, setImages]
   );
 
   const memoImage = useMemo(
@@ -52,16 +45,12 @@ const ImageListItem = ({ file, resizedSize }: ImageListItemProps) => {
   const formattedSize = useMemo(() => formatBytes(file.size), [file.size]);
 
   return (
-    <tr>
-      <td className="w-3/5 p-2">
-        <div className="grid grid-cols-3 items-center">
-          {memoImage}
-          <span className="truncate" title={file.name}>
-            {file.name}
-          </span>
-          <td className="p-2">{`${dimensions.width}x${dimensions.height}`}</td>
-        </div>
+    <tr className='border-b'>
+      <td className="p-2">{memoImage}</td>
+      <td className="truncate" title={file.name}>
+        {file.name}
       </td>
+      <td className="p-2">{`${dimensions.width}x${dimensions.height}`}</td>
       <td className="p-2">{formattedSize}</td>
       <td className="p-2">{resizedSize || formattedSize}</td>
     </tr>

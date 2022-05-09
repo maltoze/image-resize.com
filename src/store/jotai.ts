@@ -14,16 +14,11 @@ export const percentAtom = atom<number>(50);
 export const percentSliderDragging = atom(false);
 
 type ImageProps = {
-  type: string;
-  name: string;
-  width: number;
-  height: number;
-  size: number;
   file: File;
   el: HTMLImageElement;
-  resized: {
-    size?: number;
-    dataURL?: string;
+  resized?: {
+    size: number;
+    dataURL: string;
   };
 };
 export const imagesAtom = atom<{ [key: string]: ImageProps }>({});

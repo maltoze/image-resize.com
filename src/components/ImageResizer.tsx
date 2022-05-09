@@ -40,7 +40,9 @@ const ImageResizer = () => {
     (percent: number) => {
       if (Object.keys(images).length === 1) {
         const firstImage = images[Object.keys(images)[0]];
-        const { width, height } = firstImage;
+        const {
+          el: { naturalWidth: width, naturalHeight: height },
+        } = firstImage;
         const scale = percent / 100;
         setWidth(Math.round(width * scale));
         setHeight(Math.round(height * scale));
@@ -76,7 +78,11 @@ const ImageResizer = () => {
   const resize = () => {
     const canvas = document.createElement('canvas');
     Object.keys(images).forEach((key) => {
-      const { width, height, type, name, el } = images[key];
+      const {
+        file: { type, name },
+        el,
+      } = images[key];
+      const { naturalHeight: height, naturalWidth: width } = el;
       canvas.width = width * (percent / 100);
       canvas.height = height * (percent / 100);
       const ctx = canvas.getContext('2d');
@@ -105,7 +111,9 @@ const ImageResizer = () => {
       value: number;
     };
     const firstImage = images[Object.keys(images)[0]];
-    const { width, height } = firstImage;
+    const {
+      el: { naturalWidth: width, naturalHeight: height },
+    } = firstImage;
     const aspectRatio = width / height;
     let curPercent, limitedValue;
     if (name === 'width') {
