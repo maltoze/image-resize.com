@@ -47,7 +47,7 @@ const ImageSelector = () => {
           className={classNames(
             'flex items-center relative justify-center rounded-lg border-dashed border-slate-300 pt-2 outline-none dark:border-slate-500 md:h-64',
             {
-              'cursor-default flex-row flex-wrap overflow-y-auto border':
+              'cursor-default flex-row flex-wrap overflow-y-auto overflow-x-hidden border':
                 selectedImageFiles.length > 0,
             },
             {
@@ -82,7 +82,7 @@ const ImageSelector = () => {
               { hidden: !isDragActive },
               { block: isDragActive },
               {
-                'animate-pulse bg-green-600 dark:bg-green-800/50': isDragAccept,
+                'bg-green-600 dark:bg-green-800/50': isDragAccept,
               },
               { 'bg-red-600 dark:bg-red-800/50': isDragReject }
             )}
