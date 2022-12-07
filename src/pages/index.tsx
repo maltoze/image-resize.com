@@ -15,33 +15,35 @@ const IndexPage = () => {
   const { formatMessage } = useIntl();
 
   return (
-    <>
-      <div className="mt-10 space-y-10 divide-y dark:divide-slate-800 md:space-y-20">
-        <section>
-          <Hero />
-          <ImageSelector />
-        </section>
-        <FeatureSection />
-        <section>
-          <article className="prose pt-10 md:pt-20 lg:prose-xl">
-            <h3>
-              {formatMessage({
-                defaultMessage: 'Resize image should be easy.',
-              })}
-            </h3>
-            <p>
-              <FormattedMessage
-                {...messages.copy}
-                values={{
-                  span: (...chunks: any) => <span className="border-b-2 border-b-primary-700">{chunks}</span>,
-                }}
-              />
-            </p>
-          </article>
-        </section>
-        <FaqSection />
-      </div>
-    </>
+    <div className="mt-10 space-y-10 divide-y dark:divide-slate-800 md:space-y-20">
+      <section>
+        <Hero />
+        <ImageSelector />
+      </section>
+      <FeatureSection />
+      <section>
+        <article className="prose prose-slate pt-10 dark:prose-invert md:pt-20 lg:prose-xl">
+          <h3>
+            {formatMessage({
+              defaultMessage: 'Resize image should be easy.',
+            })}
+          </h3>
+          <p>
+            <FormattedMessage
+              {...messages.copy}
+              values={{
+                span: (...chunks: any) => (
+                  <span className="border-b-2 border-b-primary-700">
+                    {chunks}
+                  </span>
+                ),
+              }}
+            />
+          </p>
+        </article>
+      </section>
+      <FaqSection />
+    </div>
   );
 };
 
