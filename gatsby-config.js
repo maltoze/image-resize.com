@@ -7,15 +7,16 @@ const config = {
     siteUrl: `https://www.image-resize.com`,
   },
   plugins: [
-    {
-      resolve: 'gatsby-plugin-google-gtag',
-      options: {
-        trackingIds: ['G-KFVQW5X785'],
-        pluginConfig: {
-          head: true,
-        },
-      },
-    },
+    // use vercel analytics
+    // {
+    //   resolve: 'gatsby-plugin-google-gtag',
+    //   options: {
+    //     trackingIds: ['G-KFVQW5X785'],
+    //     pluginConfig: {
+    //       head: true,
+    //     },
+    //   },
+    // },
     'gatsby-plugin-image',
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-sitemap',
