@@ -11,6 +11,9 @@
   "9Xql9G": {
     "defaultMessage": "fast, simple, and"
   },
+  "AILw8N": {
+    "defaultMessage": "Resize image should be easy."
+  },
   "DqKd4r": {
     "defaultMessage": "Percent"
   },
@@ -31,6 +34,9 @@
   },
   "XmcDl5": {
     "defaultMessage": "Select Image"
+  },
+  "copy": {
+    "defaultMessage": "<span> image-resize.com </span> is a website designed specifically to meet your needs for resizing images. We offer a simple and easy-to-use batch processing function that allows you to easily resize multiple images at once. In addition, we also offer a variety of different resizing options that support both percentage and specific values. For example, you can set the width and height of an image, or set the scaling ratio. In terms of security, we promise not to save your images to ensure the privacy of your data. Additionally, our service is completely free to use, so you don't have to pay anything to use it. Overall, <span> image-resize.com </span> is a very useful website for anyone who needs to resize images."
   },
   "faq-answer-0": {
     "defaultMessage": "Yes, absolutely. No hidden fees or subscriptions."
