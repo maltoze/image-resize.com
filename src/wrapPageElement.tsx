@@ -3,9 +3,9 @@ import { IntlProvider } from 'react-intl';
 import Layout from './components/Layout';
 import locales from './i18n';
 import { isBrowser } from './utils/common';
-import { inject } from '@vercel/analytics';
+// import { inject } from '@vercel/analytics';
 
-inject();
+// inject();
 
 export default function wrapPageElement({
   element,
